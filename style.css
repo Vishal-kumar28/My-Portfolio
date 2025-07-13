@@ -1,6 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
 
-.nav-bar{
-    display: inline-block;
+
+@media screen and (max-width: 768px) {
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.nav-bar {
+    display: flex; /* ✅ Use flex instead */
     justify-content: space-between;
     align-items: center;
     background-color: #333;
@@ -10,7 +32,9 @@
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 999;
 }
+
 
 .nav-bar ul{
     list-style: none;
@@ -43,10 +67,10 @@
     padding-right: 50px;
 }
 
-#hero .right{
+/* #hero .right{
     width: 50%;
     padding-left: 50px;
-}
+} */
 
 .hero img{
     width: 200px;
@@ -86,7 +110,7 @@
     text-align: left;
 }
 
-#hero button{
+/* #hero button{
     background-color: #333;
     color: #fff;
     border: none;
@@ -98,7 +122,7 @@
     transition: background-color 0.3s ease;
     align-self: flex-start;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 #hero a{
     color: white;
@@ -109,6 +133,25 @@
 #hero button:hover{
     background-color: #555;
 }
+
+.cta {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.cta:hover {
+  background-color: #0056b3;
+}
+
+#hero button a {
+  display: block;
+  padding: 10px 20px;
+}
+
+
 
 /* personal details */
 #personal {
@@ -152,6 +195,13 @@
     padding: 100px 50px;
     text-align: center;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 
 #about h2{
     font-size: 36px;
@@ -295,6 +345,26 @@
     margin-bottom: 20px;
     color: #999;
 }
+
+.certificate:hover,
+.project:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  .certificate-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #personal table,
+  #skills table {
+    width: 90%;
+  }
+}
+
 
 /* Contact section */
 #contact{
@@ -597,5 +667,4 @@ footer a:hover{
 footer a:active{
     color: #aaa;
 }
-
 
