@@ -354,8 +354,7 @@ html {
 
 
 @media screen and (max-width: 768px) {
-  .certificate-grid,
-  .project-grid {
+  .certificate-grid {
     grid-template-columns: 1fr;
   }
 
@@ -539,6 +538,16 @@ input[type="submit"]:hover{
     background-color: #23527c;
 }
 
+@media screen and (max-width: 768px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #personal table,
+  #skills table {
+    width: 90%;
+  }
+}
 /* Experience */
 
 #experience{
