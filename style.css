@@ -373,11 +373,11 @@ html {
     text-align: center;
 }
 
-/* #contact h2{
+#contact h2{
     font-size: 36px;
     margin-bottom: 20px;
     color: #333;
-} */
+}
 
 .contact-info{
     margin-bottom: 40px;
@@ -396,10 +396,10 @@ html {
     margin: 10px;
 }
 
-/* .contact-info a{
+.contact-info a{
     color: #337ab7;
     text-decoration: none;
-} */
+}
 
 .contact-info a:hover{
     color: #23527c;
