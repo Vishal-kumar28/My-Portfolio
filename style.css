@@ -405,14 +405,13 @@ html {
     color: #23527c;
 }
 
-form{
-    max-width: 600px;
-    margin: 0 auto;
+form {
+    width: 300px;
+    margin: auto;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
 
 label{
     display: block;
