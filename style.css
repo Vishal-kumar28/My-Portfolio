@@ -413,35 +413,11 @@ form {
     border-radius: 8px;
   }
 
-label{
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="text"], input[type="email"], textarea{
+input, textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-textarea{
-    height: 100px;
-    resize: vertical;
-}
-
-input[type="submit"]{
-    background-color: #337ab7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover{
-    background-color: #23527c;
-}
+    padding: 8px;
+    margin-top: 5px;
+  }
 
 /* Skills */
 
