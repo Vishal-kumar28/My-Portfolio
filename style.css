@@ -354,7 +354,8 @@ html {
 
 
 @media screen and (max-width: 768px) {
-  .certificate-grid {
+  .certificate-grid,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -536,17 +537,6 @@ input[type="submit"]:hover{
 
 .project a:hover{
     background-color: #23527c;
-}
-
-@media screen and (max-width: 768px) {
-  .certificate-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #personal table,
-  #skills table {
-    width: 90%;
-  }
 }
 /* Experience */
 
